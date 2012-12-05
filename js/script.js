@@ -8,30 +8,25 @@ var slideshowSpeed = 6000;
 // Variable to store the images we need to set as background
 // which also includes some text and url's.
 var photos = [ {
+		"title" : "Design for people",
+		"image" : "design-for-people.jpg",
+		"url" : "#",
+		"firstline" : "We design to response",
+		"secondline" : "problem."
+	},
+	{
 		"title" : "Stairs",
-		"image" : "vacation.jpg",
+		"image" : "process.jpg",
 		"url" : "#",
 		"firstline" : "Going on",
 		"secondline" : "vacation?"
 	}, {
-		"title" : "Office Appartments",
-		"image" : "work.jpg",
+		"title" : "Future vision",
+		"image" : "future-vision.jpg",
 		"url" : "#",
 		"firstline" : "Or still busy at",
 		"secondline" : "work?"
-	}, {
-		"title" : "Mountainbiking",
-		"image" : "biking.jpg",
-		"url" : "#",
-		"firstline" : "Get out and be",
-		"secondline" : "active"
-	}, {
-		"title" : "Mountains Landscape",
-		"image" : "nature.jpg",
-		"url" : "#",
-		"firstline" : "Take a fresh breath of",
-		"secondline" : "nature"
-	}
+	}, 
 ];
 
 

@@ -9,7 +9,7 @@ a { text-decoration:none; }
 a:hover { text-decoration:none; }
 table { border-collapse: collapse; border-spacing: 0; }
 /* HTML ELEMENTS */
-body { background-color:#F7F7F7; font:62.5% Georgia, 'Times New Roman', serif; letter-spacing:1; }
+body { background-color:#F7F7F7; font:12px/18px Arial, Helvetica, sans-serif; }
 /* COMMON CLASSES */
 .break, .clear { clear:both; }
 .flt { float:left; }
@@ -19,8 +19,29 @@ body { background-color:#F7F7F7; font:62.5% Georgia, 'Times New Roman', serif; l
 .wid675 { width: 675px; }
 .margin-t-80 { margin-top:80px; }
 .margin-t-min-35 { margin: -35px auto 0px !important; }
+ @font-face {
+ font-family: 'OpenSansLight';
+ src: url('../font/OpenSans-Light-webfont.eot');
+ src: url('../font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),  url('../font/OpenSans-Light-webfont.woff') format('woff'),  url('../font/OpenSans-Light-webfont.ttf') format('truetype'),  url('../font/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'OpenSansRegular';
+ src: url('../font/OpenSans-Regular-webfont.eot');
+ src: url('../font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../font/OpenSans-Regular-webfont.woff') format('woff'),  url('../font/OpenSans-Regular-webfont.ttf') format('truetype'),  url('../font/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'OpenSansSemiboldItalic';
+ src: url('../font/OpenSans-SemiboldItalic-webfont.eot');
+ src: url('../font/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),  url('../font/OpenSans-SemiboldItalic-webfont.woff') format('woff'),  url('../font/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),  url('../font/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
 /* HEADER */
-#header { height:460px; }
+#header { height:460px; background:url(../images/dot.png) repeat; }
 #header-inner { height:200px; background: none repeat scroll 0 0 #0093DA; }
 .headerimg { background-position: center top; background-repeat: no-repeat; width:100%; height:600px; position:absolute; }
 /* NAVIGATION */
@@ -34,10 +55,11 @@ body { background-color:#F7F7F7; font:62.5% Georgia, 'Times New Roman', serif; l
 #menu { float:right; height:60px; }
 #menu ul { list-style:none; height:100%; padding-top:13px; }
 #menu ul li { float:left; font-variant:small-caps; font-size:12px; margin:auto 0; height:100%; }
-#menu ul li a { color:white; text-decoration:none; font-weight:bold; padding-right:20px; font:23px/34px ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; padding: 17px 8px; text-transform:none; -moz-transform: scale(0.8); -moz-transition: all 0.4s linear 0s; }
-#menu ul li a:hover { background: none repeat scroll 0 0 #FFFFFF; color: #253969; font:23px/34px ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; padding: 22px 14px; text-transform:none; -moz-transform: scale(1); -webkit-transform: scale(1); }
+#menu ul li a { color:white; text-decoration:none; padding-right:20px; font-family: OpenSansLight, sarif; font-size:26px; line-height:34px; padding: 17px 8px; text-transform:none; -moz-transform: scale(0.8); -moz-transition: all 0.4s linear 0s; -webkit-transform: scale(0.8); -webkit-transition: all 0.4s linear 0s; -ms-transform: scale(0.8); -ms-transition: all 0.4s linear 0s; transform: scale(0.8); transition: all 0.4s linear 0s; }
+#menu ul li a:hover { background: none repeat scroll 0 0 #FFFFFF; color: #253969; font-family: OpenSansLight, Palatino, serif; font-size:26px; line-height:34px; padding: 22px 14px; text-trans form:none;
+-moz-transform: scale(1); -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 /* HEADER TEXT */
-#headertxt { width:998px; margin:0 auto; clear:both; position:relative; top:74px; }
+#headertxt { width:998px; margin:0 auto; clear:both; position:relative; top:74px; font:62.5% Georgia, 'Times New Roman', serif; letter-spacing:1; }
 #firstline { background-image:url("../images/textbg.png"); color:#333; font-size:40px; padding:4px 13px 7px; float:left; display:block; }
 #secondline { background-image:url("../images/textbg.png"); color:#CD2B3A; text-decoration:none; font-size:60px; padding:0 13px 10px; float:left; display:block; clear:both; }
 #secondline:hover { text-decoration:underline; color:#7F000C; }
@@ -59,19 +81,22 @@ body { background-color:#F7F7F7; font:62.5% Georgia, 'Times New Roman', serif; l
 #content p { padding:10px 20px; font-size:16px; margin:0 auto; }
 #content p a { text-decoration:none; color:#CD2B3A; }
 #content p a:hover { text-decoration:underline; color:#7F000C; }
-.headings { background: none repeat scroll 0 0 #77AD52; color: #FFFFFF; font-family: 'Soho Gothic Pro', Arial, Tahoma; font-size: 27px; margin-left: 20px; padding: 5px 15px; }
+.headings { color: #77AD52; font-family: 'OpenSansLight', Arial, Tahoma; font-size: 27px; margin-left: 20px; padding: 5px 15px 5px 0px; }
+.subheadings { color: #77AD52; font-family: 'OpenSansLight',Arial,Tahoma; font-size: 22px; margin-left: 20px; margin-top: 20px; padding: 5px 15px 5px 0; }
 /*-----------contact form -----------------------------------------------------------------------------------*/
 .contactform { width:660px; float:left; margin:0; padding:0; }
-.form-h { background-color:#CC3333; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
-.form { background-color:#3D3D3D; margin:0; padding:8px 0px; overflow:hidden; }
-.form:hover { background-color:#000; margin:0; padding:8px 0px; overflow:hidden; }
+.form-h { background-color:#3FAACD; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
+.form { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
+.form:hover { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
 .formdiv { width:300px; margin:0 15px; padding:0; float:left; }
-.form .field1 { width:93px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#CC3333; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
+.form .field1 { width:93px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#3FAACD; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
 .form .field2 { width:180px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
 .form .field3 { width:290px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
-.form .field2 input { width:180px; margin:0px; padding:0 5px; height:28px; line-height:28px; border:0px; color:#000000; font-size:12px; }
-.form .field3 .textarea { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; }
-.form .field3 .button { background-color:#CC3333; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
+.form .field2 input { width:180px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#C9C9C9;border:1px solid #999;}
+.form .field2 input:hover { width:180px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#ADA9A9;border:1px solid #777676;}
+.form .field3 .textarea { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;border:1px solid #999;}
+.form .field3 .textarea:hover { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;background:#ADA9A9;border:1px solid #777676;}
+.form .field3 .button { background-color:#3FAACD; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
 /*---------- contnet end ------------------------------------------*/
 
 /*---------- right why us ------------------------------------------*/
@@ -89,14 +114,14 @@ body { background-color:#F7F7F7; font:62.5% Georgia, 'Times New Roman', serif; l
 
 
 .menu { margin-top:5px; }
-ul.menu li { float:left; font:12px/18px Century Gothic, sans-serif; color:#fff; padding-right:36px; }
-ul.menu li a { font:bold 13px/20px Century Gothic, sans-serif; color:#fff; }
+ul.menu li { float:left; font:12px/18px Century Gothic, sans-serif; color:#403F3F; padding-right:36px; }
+ul.menu li a { font:bold 13px/20px Century Gothic, sans-serif; color:#403F3F; }
 ul.menu { list-style-position:inside; }
-ul.menu li ul { list-style-position:inside; border-top: 3px solid #3B7B23; }
-ul.menu li ul:hover { list-style-position:inside; background:#333; border-top: 3px solid #fff; -moz-transition: background-color 0.2s linear 0s; -webkit-transition: background-color 0.2s linear 0s; }
+ul.menu li ul { list-style-position:inside; border-top: 3px solid #6B6C6B; }
+ul.menu li ul:hover { list-style-position:inside;  border-top: 3px solid #1570A6; -moz-transition: background-color 0.2s linear 0s; -webkit-transition: background-color 0.2s linear 0s; -ms-transition: background-color 0.2s linear 0s; transition: background-color 0.2s linear 0s; }
 ul.menu li ul li { float: none; list-style:none; padding-left:4px; }
-ul.menu li ul li:hover { float: none; list-style:none; background-color:#3B7B23; padding-left:4px; -moz-transition: background-color 0.3s linear 0s; -webkit-transition: background-color 0.3s linear 0s; }
-ul.menu li ul li a { font:12px/21px Century Gothic, sans-serif; color:#fff; }
+ul.menu li ul li:hover { float: none; list-style:none; background-color:#B2B4BB; padding-left:4px; -moz-transition: background-color 0.3s linear 0s; -webkit-transition: background-color 0.3s linear 0s; -ms-transition: background-color 0.3s linear 0s; transition: background-color 0.3s linear 0s; }
+ul.menu li ul li a { font:12px/21px Century Gothic, sans-serif; color:#403F3F; }
 /*---------- contant left middle ----------------------------------*/
 #content_mid .case-studies { width:660px; overflow:hidden; float:left; }
 .dot { background:url(../images/dot.jpg) repeat-x left center; height:25px; }
@@ -110,7 +135,7 @@ ul.menu li ul li a { font:12px/21px Century Gothic, sans-serif; color:#fff; }
 .inner_content h2 { font-size:26px; color:#000000; margin:0; padding:0; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
 .middle ul { font-size:28px; color:#000000; margin:0; padding:0; list-style:none; }
 .middle ul li { float:left; padding:10px 10px 20px 10px; width:290px; /*background:url(../images/bgline-repeat.jpg);*/ background:#374248; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; }
-.middle ul li:hover { float:left; padding:10px 10px 20px 10px; width:290px; background:#374248; -moz-box-shadow:1px 1px 4px 2px #6A6A6A; -webkit-box-shadow:1px 1px 4px 2px #6A6A6A; box-shadow:1px 1px 4px 2px #6A6A6A; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; }
+.middle ul li:hover { float:left; padding:10px 10px 20px 10px; width:290px; background:#374248; -moz-box-shadow:1px 1px 4px 2px #6A6A6A; -webkit-box-shadow:1px 1px 4px 2px #6A6A6A; -ms-box-shadow:1px 1px 4px 2px #6A6A6A; box-shadow:1px 1px 4px 2px #6A6A6A; border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px; }
 .middle ul li .img { padding:8px; margin:0px 0px 10px 0px; background-color:#ffffff; overflow:hidden; text-align:center; }
 .middle ul li .text { padding:8px; margin:0px; background-color:#ffffff; overflow:hidden; color:#000000; font-size:14px; font-family:Calibri, Arial, Helvetica, sans-serif; }
 .middle ul li .moreinfo { padding:0px; margin:10px 0px 0px 0px; overflow:hidden; }
@@ -121,7 +146,8 @@ ul.menu li ul li a { font:12px/21px Century Gothic, sans-serif; color:#fff; }
 .color-yellow { color:#ced729; }
 .fleft { float:left; }
 .fright { float:right }
-.footer { width:100%; height:230px; border-top: 20px solid #CC3333; background:#3D3D3D; padding-bottom:10px; }
+.footer-upper { width:100%; height:auto; background:#1570A6; padding-bottom:10px; }
+.footer { width:100%; height:230px; background:#eeeeee; padding-bottom:10px; }
 .footer_inner { width:998px; margin:0 auto; padding-top: 10px; }
 /*---------- Logo blick strip ---------------------------------------------------*/
 div.logo1 { position: relative; float:left; }
@@ -142,5 +168,10 @@ img.b { position: absolute; left: 0; top: 0; }
 #logos_strip .logos ul { margin:0px; padding:0px; }
 #logos_strip .logos ul li { margin:7px 11px 0px 11px; float:left; list-style-type:none; }
 .logos-strip { width:100%; margin:0 0 10px 0; padding:0px; overflow:hidden; }
-.sub-menu ul li a { background: none repeat scroll 0 0 #CC3333; border-bottom: 2px solid #FFFFFF; color: #FFFFFF; display: block; font: 20px/18px Calibri, Arial, Helvetica, sans-serif; height: 20px; padding: 10px; }
-.sub-menu ul li a:hover, .sub-menu ul li a.current { background: none repeat scroll 0 0 #780606; border-bottom: 2px solid #FFFFFF; color: #FFFFFF; display: block; font: 20px/18px Calibri, Arial, Helvetica, sans-serif; height: 20px; padding: 10px; -moz-transition: background-color 0.4s linear 0s; -webkit-transition: background-color 0.4s linear 0s; border-left:5px solid #4A1511; }
+.sub-menu ul li a { background: none repeat scroll 0 0 #52A632; border-bottom: 2px solid #FFFFFF; color: #FFFFFF; display: block; font: 18px/20px OpenSansLight; height: 20px; padding: 10px; }
+.sub-menu ul li a:hover, .sub-menu ul li a.current { background: none repeat scroll 0 0 #103E04; border-bottom: 2px solid #FFFFFF; color: #FFFFFF; display: block; font: 18px/20px OpenSansLight; height: 20px; padding: 10px; -moz-transition: background-color 0.4s linear 0s; -webkit-transition: background-color 0.4s linear 0s; -ms-transition: background-color 0.4s linear 0s; transition: background-color 0.4s linear 0s; border-bottom: 3px solid #19280C; border-left: 2px solid #41780F; border-right: 2px solid #41780F; }
+.services-lists { list-style:inside decimal; font: 16px Arial; margin-left: 50px; }
+.services-lists li { list-style-position:outside; }
+
+ul.small-list { font-size: 16px;margin: 0 auto; padding: 10px 20px; }
+ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-type: disc; padding-left: 15px; }
