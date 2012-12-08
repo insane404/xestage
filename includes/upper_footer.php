@@ -28,7 +28,7 @@
             <div class="formdiv">
                 <div class="field1">&nbsp;Requirement</div>
                 <div class="field3">
-                <textarea style="width:290px;" class="textarea" rows="4" name="req"></textarea>
+                <textarea style="width:290px; resize: none;" class="textarea" rows="4" name="req"></textarea>
                 <br />
                 <br />
                 <input type="text" style="display:none;" name="intellisence">

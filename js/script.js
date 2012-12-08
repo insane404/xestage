@@ -15,7 +15,7 @@ var photos = [ {
 		"secondline" : "problem."
 	},
 	{
-		"title" : "Stairs",
+		"title" : "Follow the process",
 		"image" : "process.jpg",
 		"url" : "#",
 		"firstline" : "Going on",

@@ -56,7 +56,7 @@
                         <h3>Web Services</h3>
                         We provide web services from amazingly designed websites to professional and user-friendly websites. We also provide best in the industry SEO services.
                     </div>
-                    <div class="moreinfo"><a target="_blank" class="more" href="#">More Info</a></div>
+                    <div class="moreinfo"><a class="more" href="web_application_development.php">More Info</a></div>
                 </li>
                 <li style="margin:0px 34px;">
                     <div class="img"><img width="270" height="165" src="images/img2.jpg"></div>
@@ -64,7 +64,7 @@
                         <h3>Internet Marketing</h3>
                         We provide Internet Marketing services like Online Promotion including Search Engine Optimization (SEO) as well as Offline Promotion of your Business/Website.
                     </div>
-                    <div class="moreinfo"><a target="_blank" class="more" href="#">More Info</a></div>
+                    <div class="moreinfo"><a class="more" href="internet_marketing.php">More Info</a></div>
                 </li>
                 <li>
                     <div class="img"><img width="270" height="165" src="images/img3.jpg"></div>
