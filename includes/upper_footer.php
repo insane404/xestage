@@ -42,10 +42,10 @@
         
 <div href="#" id="social-large" class="module dark">
 	<h3 class="header-white">CONNECT WITH US</h3>
-	<a target="_blank" href="http://www.facebook.com/thuzi" id="social-fb"></a>
-	<a target="_blank" href="https://twitter.com/Thuzi" id="social-twit"></a>
-	<a target="_blank" href="http://www.linkedin.com/company/809768?trk=tyah" id="social-linked"></a>
-	
+	<a target="_blank" href="http://www.facebook.com/xenialtechnologies" id="social-fb"></a>
+	<a target="_blank" href="https://twitter.com/xenialtechnologies" id="social-twit"></a>
+	<a target="_blank" href="http://www.linkedin.com/xenialtechnologies" id="social-linked"></a>
+        <!--<a target="_blank" href="http://www.linkedin.com/xenialtechnologies" id="social-google-plus"></a>-->
 </div>
 
 

@@ -204,6 +204,7 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
 	font-family: OpenSansLight,sarif;
 }
 #social-large #social-fb {
+    /*background-image: url("../images/facebook-pocket.png");*/
     background-image: url("../images/img-social-fb.png");
 }
 #colophon a:hover {
@@ -228,8 +229,14 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
 }
 
 #social-large #social-twit {
+    /*background-image: url("../images/twitter.png");*/
     background-image: url("../images/img-social-twit.png");
 }
 #social-large #social-linked {
+    /*background-image: url("../images/linkedin.png");*/
     background-image: url("../images/img-social-linked.png");
+}
+
+#social-large #social-google-plus {
+    background-image: url("../images/google_v3.png");
 }
