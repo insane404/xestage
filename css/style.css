@@ -85,18 +85,18 @@ body { background-color:#F7F7F7; font:12px/18px Arial, Helvetica, sans-serif; }
 .subheadings { color: #77AD52; font-family: 'OpenSansLight',Arial,Tahoma; font-size: 22px; margin-left: 20px; margin-top: 20px; padding: 5px 15px 5px 0; }
 /*-----------contact form -----------------------------------------------------------------------------------*/
 .contactform { width:660px; float:left; margin:0; padding:0; }
-.form-h { background-color:#3FAACD; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
+.form-h { background-color:#374248; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
 .form { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
 .form:hover { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
 .formdiv { width:300px; margin:0 15px; padding:0; float:left; }
-.form .field1 { width:93px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#3FAACD; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
+.form .field1 { width:93px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#374248; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
 .form .field2 { width:180px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
 .form .field3 { width:290px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
 .form .field2 input { width:180px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#C9C9C9;border:1px solid #999;}
 .form .field2 input:hover { width:180px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#ADA9A9;border:1px solid #777676;}
 .form .field3 .textarea { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;border:1px solid #999;}
 .form .field3 .textarea:hover { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;background:#ADA9A9;border:1px solid #777676;}
-.form .field3 .button { background-color:#3FAACD; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
+.form .field3 .button { background-color:#374248; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
 /*---------- contnet end ------------------------------------------*/
 
 /*---------- right why us ------------------------------------------*/
@@ -175,3 +175,61 @@ img.b { position: absolute; left: 0; top: 0; }
 
 ul.small-list { font-size: 16px;margin: 0 auto; padding: 10px 20px; }
 ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-type: disc; padding-left: 15px; }
+
+
+#social-large {
+    float: right;
+    height: 115px;
+    text-align: center;
+    width: 285px;
+	 margin-top: 55px;
+}
+.module {
+    background: none repeat scroll 0 0 #454444;
+    float: left;
+    min-height: 115px;
+    padding: 1%;
+    text-align: center;
+    width: 29%;
+}
+#colophon {
+    color: #FFFFFF;
+}
+
+.header-white {
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 10px;
+	font-family: OpenSansLight,sarif;
+}
+#social-large #social-fb {
+    background-image: url("../images/img-social-fb.png");
+}
+#colophon a:hover {
+    color: #000000;
+}
+#social-large a:hover {
+    background-position: left -59px;
+}
+#colophon a {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+#social-large a {
+    display: inline-block;
+    height: 59px;
+    margin: 5px;
+    width: 59px;
+}
+#social-fb, #social-twit, #social-linked, #social-mail, #social-rss {
+    background-origin: content-box;
+    background-size: 100% auto;
+}
+
+#social-large #social-twit {
+    background-image: url("../images/img-social-twit.png");
+}
+#social-large #social-linked {
+    background-image: url("../images/img-social-linked.png");
+}
