@@ -1,1 +1,1 @@
-<?php include('/includes/top_menu.php'); ?>
+<?php include($ABSOLUTE_URL.'/includes/top_menu.php'); ?>

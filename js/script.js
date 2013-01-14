@@ -11,21 +11,22 @@ var photos = [ {
 		"title" : "Design for people",
 		"image" : "design-for-people.jpg",
 		"url" : "#",
-		"firstline" : "We design to response",
-		"secondline" : "problem."
+		"firstline" : "Design creativity and emotions ",
+		"secondline" : "to set dreams into reality."
 	},
 	{
 		"title" : "Follow the process",
 		"image" : "process.jpg",
 		"url" : "#",
-		"firstline" : "Going on",
-		"secondline" : "vacation?"
-	}, {
+		"firstline" : "Team of game players with an ultimate goal,",
+		"secondline" : " to hit the target."
+	},
+        {
 		"title" : "Future vision",
 		"image" : "future-vision.jpg",
 		"url" : "#",
-		"firstline" : "Or still busy at",
-		"secondline" : "work?"
+		"firstline" : "Challenging own perceptions leads",
+		"secondline" : "to innovative creation that's beyond all horizons."
 	}, 
 ];
 

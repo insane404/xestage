@@ -60,10 +60,10 @@ body { background-color:#F7F7F7; font:12px/18px Arial, Helvetica, sans-serif; }
 -moz-transform: scale(1); -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 /* HEADER TEXT */
 #headertxt { width:998px; margin:0 auto; clear:both; position:relative; top:74px; font:62.5% Georgia, 'Times New Roman', serif; letter-spacing:1; }
-#firstline { background-image:url("../images/textbg.png"); color:#333; font-size:40px; padding:4px 13px 7px; float:left; display:block; }
-#secondline { background-image:url("../images/textbg.png"); color:#CD2B3A; text-decoration:none; font-size:60px; padding:0 13px 10px; float:left; display:block; clear:both; }
+#firstline { background-image:url("../images/textbg.png"); color:#333; font-size:24px; padding:4px 13px 7px; float:left; display:block; }
+#secondline { background-image:url("../images/textbg.png"); color:#CD2B3A; text-decoration:none; font-size:32px; padding:0 13px 10px; float:left; display:block; clear:both; }
 #secondline:hover { text-decoration:underline; color:#7F000C; }
-.pictured { background-color:#CC3333; color:#FFF; font-size:12px; padding:9px 16px; text-transform:uppercase; float:left; display:block; clear:both; margin-top:10px; }
+.pictured { background-color:#CC3333; color:#FFF; font-size:11px; padding:9px 16px; text-transform:uppercase; float:left; display:block; clear:both; margin-top:10px; }
 .pictured a { font-size:16px; font-style:italic; letter-spacing:0; text-transform:none; color:#FFF; text-decoration:none; }
 .pictured a:hover { text-decoration:underline; }
 /* CONTROLS */
@@ -97,6 +97,25 @@ body { background-color:#F7F7F7; font:12px/18px Arial, Helvetica, sans-serif; }
 .form .field3 .textarea { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;border:1px solid #999;}
 .form .field3 .textarea:hover { margin:0px 0px 5px 0px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;background:#ADA9A9;border:1px solid #777676;}
 .form .field3 .button { background-color:#374248; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
+/*---------- contnet end ------------------------------------------*/
+
+/*-----------contact form page -----------------------------------------------------------------------------------*/
+.contactform { width:660px; float:left; margin:0; padding:0; }
+.form-h { background-color:#374248; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
+.form-contact { background-color:#FFFFFF; margin:0; padding:18px 6px; overflow:hidden; }
+/*.form-contact:hover { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }*/
+.formdiv-contact { width:600px; margin:0 15px; padding:0; float:left; }
+.form-contact .field1 { width:170px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#374248; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
+.form-contact .field2 { width:375px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
+.form-contact .field3 { width:325px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
+.form-contact .field4 { width:325px; margin:0px 0px 5px 0px; padding:0; float:left; color:#000000; font-size:12px; }
+.form-contact .field2 input { width:325px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#C9C9C9;border:1px solid #999;}
+.form-contact .field2 input:hover { width:325px; margin:0px; padding:0 5px; height:26px; line-height:28px; border:0px; color:#000000; font-size:12px; background:#ADA9A9;border:1px solid #777676;}
+.form-contact .field3 .textarea { margin:0px 0px 0px 0px; width: 325px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;border:1px solid #999;}
+.form-contact .field3 .textarea:hover { margin:0px 0px 0px 0px; width: 325px; padding:0 5px; border:0px; height:100px; background:#C9C9C9;background:#ADA9A9;border:1px solid #777676;}
+.form-contact .field4 .select { margin:0px 0px 0px 0px; width: 337px; border:0px; height:28px; background:#C9C9C9;border:1px solid #999;}
+.form-contact .field4 .select:hover { margin:0px 0px 0px 0px; width: 337px; border:0px; height:28px; background:#C9C9C9;background:#ADA9A9;border:1px solid #777676;}
+.form-contact .field3 .button { background-color:#374248; margin:0px; padding:0px; border:0px; height:25px; line-height:25px; width:80px; float:right; color:#fff; }
 /*---------- contnet end ------------------------------------------*/
 
 /*---------- right why us ------------------------------------------*/
@@ -239,4 +258,14 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
 
 #social-large #social-google-plus {
     background-image: url("../images/google_v3.png");
+}
+
+.social-text {
+    font: 20px OpenSansLight,sarif;
+    height: auto !important;
+    display: inline !important;
+    color: #FFFFFF;
+    float: left;
+    width: 182px !important;
+    margin: 17px 3px !important;
 }

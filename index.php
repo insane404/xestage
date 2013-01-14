@@ -1,3 +1,6 @@
+<?php
+include('core.php');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -8,13 +11,14 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script type="text/javascript" src="js/jquery.1.7.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<?php include($ABSOLUTE_URL.'/includes/analyticstracking.php'); ?>
 </head>
 <body>
 <div id="header">
-    <?php include('/includes/header.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/header.php'); ?>
 </div>
 <div style="border-bottom:2px solid #ffffff;" id="logos_strip">
-    <?php include('/includes/logo.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/logo.php'); ?>
 </div>
     
     
@@ -87,11 +91,11 @@
 </div>
 <div class="clear"></div>
 <div class="footer-upper">
-    <?php include('/includes/upper_footer.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/upper_footer.php'); ?>
 </div>
 <div class="clear"></div>
 <div class="footer">
-    <?php include('/includes/lower_footer.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/lower_footer.php'); ?>
 </div>
 <div class="clear"></div>
 

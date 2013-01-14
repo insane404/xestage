@@ -5,7 +5,7 @@
   </div>
   <!-- Top navigation on top of the images -->
   <!--<div class="pentagon"></div>-->
-    <?php include('/includes/top_menu.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/top_menu.php'); ?>
   <!-- Slideshow controls -->
   <div id="headernav-outer">
     <div id="headernav">

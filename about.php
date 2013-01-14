@@ -1,3 +1,6 @@
+<?php
+include('core.php');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -8,10 +11,11 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<?php include($ABSOLUTE_URL.'/includes/analyticstracking.php'); ?>
 </head>
 <body>
 <div id="header-inner">
-    <?php include('/includes/header_innerpages.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/header_innerpages.php'); ?>
 </div>
 
 <div id="content">
@@ -31,7 +35,7 @@
             <li><div class="img"><img width="270" height="165" src="images/img3.jpg"></div>
             <div class="text"><h3>Animation Services</h3>
             We also provide animation services like 3D Character Modelling, Animated Video etc,, at cost you cannot imagine.<br /><br /></div>
-            <div class="moreinfo"><a target="_blank" class="more" href="http://www.gardencentreonline.co.uk/">More Info Coming Soon</a></div>
+            <div class="moreinfo"><a target="_blank" class="more" href="#">More Info</a></div>
             </li>
         </ul>
 	</div>
@@ -44,11 +48,11 @@
 </div>
 <div class="clear"></div>
 <div class="footer-upper">
-    <?php include('/includes/upper_footer.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/upper_footer.php'); ?>
 </div>
 <div class="clear"></div>
 <div class="footer">
-    <?php include('/includes/lower_footer.php'); ?>
+    <?php include($ABSOLUTE_URL.'/includes/lower_footer.php'); ?>
 </div>
 <div class="clear"></div>
 
