@@ -1,6 +1,3 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^xenialservices.com
-  RewriteRule (.*) http://www.xenialservices.com/$1 [R=301,L]
-  RewriteBase /
-</IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.xenialservices\.com$ [NC]
+RewriteRule ^(.*)$ http://www.xenialservices.com/$1 [L,R=301]
