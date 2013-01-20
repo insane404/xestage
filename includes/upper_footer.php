@@ -83,9 +83,9 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
     <div href="#" id="social-large" class="module dark">
         <h3 class="header-white">CONNECT WITH US</h3>
         <a target="_blank" href="http://www.facebook.com/xenialtechnologies" id="social-fb"></a>
-        <a target="_blank" href="www.twitter.com/XenialServices" id="social-twit"></a>
+        <a target="_blank" href="http://www.twitter.com/XenialServices" id="social-twit"></a>
         <a target="_blank" href="http://www.linkedin.com/xenialtechnologies" id="social-linked"></a>
-        <!--<a target="_blank" href="http://www.linkedin.com/xenialtechnologies" id="social-google-plus"></a>-->
+        <a target="_blank" href="http://plus.google.com/112096400134772836764" id="social-google-plus"></a>
     </div>
     <?php
     }
