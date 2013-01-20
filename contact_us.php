@@ -1,5 +1,6 @@
 <?php
 include('core.php');
+require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -12,6 +13,12 @@ include('core.php');
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <?php include($ABSOLUTE_URL.'/includes/analyticstracking.php'); ?>
+<script type="text/javascript">
+    var RecaptchaOptions = {
+    theme : 'custom',
+    custom_theme_widget: 'recaptcha_widget'
+};
+</script>
 </head>
 <body>
 <div id="header-inner">
@@ -24,7 +31,8 @@ include('core.php');
     <p>&nbsp;</p>
     <span class="headings">Contact Us</span>
     <div class="contactform">
-        <form id="Form" action="contact_us_mail.php" method="get">
+        <form id="Form" action="process/process.php" method="post">
+            <input type="hidden" name="action" value="full_form" />
             <div class="form-contact">
                 <div class="formdiv-contact">
                     <div class="field1">&nbsp;Select Inquiry Type</div>
@@ -37,7 +45,6 @@ include('core.php');
                             <option value="Investor Relations">Investor Relations</option>
                             <option value="Media">Media</option>
                             <option value="Request for Services">Request for Services</option>
-                            <option value="SMAC">SMAC</option>
                         </select>
                     </div>
                     <div class="field1">&nbsp;Name</div>
@@ -342,9 +349,43 @@ include('core.php');
                             <option value="Others">Others</option>
                         </select>
                     </div>
+                    <div class="field1">&nbsp;reCAPTCHA</div>
+                    <div class="field2" style="font-family: OpenSansLight,sarif;">
+                        <?php
+                        //echo recaptcha_get_html($publickey, $error);
+                        ?>
+                        <div id="recaptcha_widget" style="display:none">
+                        <div id="recaptcha_image" style="border: 1px #000000 solid;"></div>
+                        <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+
+                        <span class="recaptcha_only_if_image" style="color: #0093DA">Enter the words above:</span>
+                        <span class="recaptcha_only_if_audio" style="color: #0093DA">Enter the numbers you hear:</span>
+
+                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
+
+                        <div><a href="javascript:Recaptcha.reload()" style="color: #0093DA">Get another CAPTCHA</a></div>
+                        <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')" style="color: #0093DA">Get an audio CAPTCHA</a></div>
+                        <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')" style="color: #0093DA">Get an image CAPTCHA</a></div>
+
+                        <div><a href="javascript:Recaptcha.showhelp()" style="color: #0093DA">Help</a></div>
+
+                        </div>
+
+                        <script type="text/javascript"
+                            src="http://www.google.com/recaptcha/api/challenge?k=<?php echo $publickey ?>">
+                        </script>
+                        <noscript>
+                        <iframe src="http://www.google.com/recaptcha/api/noscript?k=<?php echo $publickey ?>"
+                                height="300" width="500" frameborder="0"></iframe><br>
+                        <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                        </textarea>
+                        <input type="hidden" name="recaptcha_response_field"
+                                value="manual_challenge">
+                        </noscript>
+                    </div>
                     <div class="field1" style="background-color: #FFFFFF;"></div>
                     <div class="field2">
-                        <input type="submit" class="button" value="Send" style="width: 100px;">
+                        <input type="submit" class="button" value="Submit" style="width: 100px;">
                     </div>
                 </div>
             </div>
