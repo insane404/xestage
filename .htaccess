@@ -1,2 +1,6 @@
-RewriteEngine on
-Redirect 301 xenialservices.com http://www.xenialservices.com/
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^xenialservices.com
+  RewriteRule (.*) http://www.xenialservices.com/$1 [R=301,L]
+  RewriteBase /
+</IfModule>
