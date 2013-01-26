@@ -21,11 +21,10 @@ include('core.php');
 <div id="content">
   <div class="inner_content margin-t-min-35" style=" border-top-left-radius:5px; border-top-right-radius:5px;">
   <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
-        <ul>
-            <li><a href="php.php" class="current">PHP</a></li>
-            <li><a href="cakephp.php" >CakePHP</a></li>
-            <li><a href="wordpress.php">WordPress</a></li>
-        </ul>
+        <?php
+        $page = '1';
+        include($ABSOLUTE_URL.'/includes/technologies_left_panel.php');
+        ?>
     </div>
    <div class="flt wid675">
     <p>&nbsp;</p>

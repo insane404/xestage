@@ -45,21 +45,33 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
                         <input type="text" onkeypress="javascript:et();" name="email">
                     </div>
                     <div class="field1">&nbsp;reCAPTCHA</div>
-                    <div class="field2" style="clear: both;">
+                    <div class="field2" style="clear: both; width: 300px;">
                         <div id="recaptcha_widget" style="display:none">
-                        <div id="recaptcha_image" style="border: 1px #000000 solid;"></div>
+                        <div id="recaptcha_image" style="border: 1px #000000 solid; margin-bottom: 3px;"></div>
                         <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
 
-                        <span class="recaptcha_only_if_image" style="color: #0093DA">Enter the words above:</span>
-                        <span class="recaptcha_only_if_audio" style="color: #0093DA">Enter the numbers you hear:</span>
+                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" style="float: left;" />
 
-                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
+                        <div style="float: left; margin-top: 4px;">
+                            <a href="javascript:Recaptcha.reload()" style="color: #9DABB1;">
+                                <img src="images/reload.png" title="Get another CAPTCHA" alt="Get another CAPTCHA" width="20" height="20" />
+                            </a>
+                        </div>
+                        <div class="recaptcha_only_if_image" style="float: left; margin-top: 4px;">
+                            <a href="javascript:Recaptcha.switch_type('audio')" style="color: #9DABB1">
+                                <img src="images/audio.png" title="Get an audio CAPTCHA" alt="Get an audio CAPTCHA" width="20" height="20" />
+                            </a>
+                        </div>
+                        <div class="recaptcha_only_if_audio" style="float: left; margin-top: 4px;">
+                            <a href="javascript:Recaptcha.switch_type('image')" style="color: #9DABB1">
+                                <img src="images/image.png" title="Get an image CAPTCHA" alt="Get an image CAPTCHA" width="20" height="20" />
+                            </a>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <span class="recaptcha_only_if_image" style="color: #9DABB1">Enter the words above:</span>
+                        <span class="recaptcha_only_if_audio" style="color: #9DABB1">Enter the numbers you hear:</span>
 
-                        <div><a href="javascript:Recaptcha.reload()" style="color: #0093DA">Get another CAPTCHA</a></div>
-                        <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')" style="color: #0093DA">Get an audio CAPTCHA</a></div>
-                        <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')" style="color: #0093DA">Get an image CAPTCHA</a></div>
-
-                        <!--<div><a href="javascript:Recaptcha.showhelp()" style="color: #0093DA">Help</a></div>-->
+                        <!--<div><a href="javascript:Recaptcha.showhelp()" style="color: #9DABB1">Help</a></div>-->
 
                         </div>
 
@@ -85,7 +97,7 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
         <a target="_blank" href="http://www.facebook.com/xenialtechnologies" id="social-fb"></a>
         <a target="_blank" href="http://www.twitter.com/XenialServices" id="social-twit"></a>
         <a target="_blank" href="http://www.linkedin.com/xenialtechnologies" id="social-linked"></a>
-        <a target="_blank" href="http://plus.google.com/112096400134772836764" id="social-google-plus"></a>
+        <!--<a target="_blank" href="http://plus.google.com/112096400134772836764" id="social-google-plus"></a>-->
     </div>
     <?php
     }

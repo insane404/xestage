@@ -1,3 +1,2 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\.xenialservices\.com$ [NC]
-RewriteRule ^(.*)$ http://www.xenialservices.com/$1 [L,R=301]
+Redirect 301 xenialservices.com http://www.xenialservices.com/

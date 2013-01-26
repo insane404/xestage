@@ -23,22 +23,14 @@ include('core.php');
 
   <div class="inner_content margin-t-min-35" style=" border-top-left-radius:5px; border-top-right-radius:5px;">
 
-  <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
+    <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
 
-        <ul>
-            <li><a href="website_design.php">Website Design</a></li>
-            <li><a href="web_application_development.php" >Web Application Development</a></li>
-            <li><a href="e-commerce.php" >E-Commerce</a></li>
-            <li><a href="content_management_system.php">Content Management System</a></li>
-            <li><a href="testing_&_qa.php">Testing & QA</a></li>
-            <li><a href="#">3D & Animation</a></li>
-            <li><a href="internet_marketing.php">Internet Marketing</a></li>
-            <li><a href="iphone-application-development.php" class="current">iPhone App Development</a></li>
-            <li><a href="android-application-development.php">Android App Development</a></li>
-            <li><a href="software-development.php">Software Development</a></li>
-        </ul>
+        <?php
+        $page = '8';
+        include($ABSOLUTE_URL.'/includes/development_left_panel.php');
+        ?>
 
-	</div>
+    </div>
 
    <div class="flt wid675">
 
