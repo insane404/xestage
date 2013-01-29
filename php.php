@@ -29,7 +29,11 @@ include('core.php');
    <div class="flt wid675">
     <p>&nbsp;</p>
     <span class="headings">PHP</span>
-    <p>Php is one of the most popular web development scripting language. We at xenial are focussed on building and developing highly scalable and efficient php based applications catering to a wide range of domains. With an experienced and dedicated workforce , we have the capability to build core php applications as well as to integrate it with other open source technologies like mysql and content management systems. Xenial is capable of delivering end to end robust php applications . we at Xenial also ensures timely deliverance and smooth transition of product to the client. Our experts codes and develops highly optimized php codes while taking in consideration each and every requirement of the clients.</p>
+    <p>Php is one of the most popular web development scripting language. We at xenial are focussed on building and developing highly scalable and efficient php based applications catering to a wide range of domains. 
+    </p>
+    <p>With an experienced and dedicated workforce , we have the capability to build core php applications as well as to integrate it with other open source technologies like mysql and content management systems. Xenial is capable of delivering end to end robust php applications. </p>
+    <p>We at Xenial also ensure timely deliverance and smooth transition of product to the client. Our experts code and develops highly optimized php codes while taking in consideration each and every requirement of the clients.</p>
+    <p>Xenial has a vast experience in developing applicaions based on PHP, some solutions provided to our clients based on PHP are like web applications, inventory applications, payment gateways, CMS etc. PHP being an open source web development language provides with our clients with endless possibilities, while also keeping the whole system durable and secure. </p>
     <p>&nbsp;</p>
    </div>
         

@@ -87,6 +87,7 @@ body { background-color:#F7F7F7; font:12px/18px Arial, Helvetica, sans-serif; }
 .contactform { width:660px; float:left; margin:0; padding:0; }
 .form-h { background-color:#374248; margin:0; padding:0; line-height:35px; height:35px; font-family: 'Soho Gothic Pro', Arial, Tahoma; color:#fff; font-size:20px; }
 .form { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
+.form-extra { background-color:#EFEFEF; margin:0; overflow:hidden;  border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
 .form:hover { background-color:#EFEFEF; margin:0; padding:8px 0px; overflow:hidden; }
 .formdiv { width:300px; margin:0 15px; padding:0; float:left; }
 .form .field1 { width:93px; margin:0px 5px 5px 0px; padding:0 0 0 7px; height:28px; line-height:28px; background-color:#374248; float:left; color:#fff; font-size:12px; font-family: 'Soho Gothic Pro', Arial, Tahoma; }
@@ -201,7 +202,7 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
     height: 115px;
     text-align: center;
     width: 285px;
-	 margin-top: 55px;
+    margin-top: 80px;
 }
 .module {
     background: none repeat scroll 0 0 #454444;
@@ -269,3 +270,17 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
     width: 182px !important;
     margin: 17px 3px !important;
 }
+/*-----------Error-----------------------------------------------------------------------------------*/
+.st-error-div { margin: auto; width: 530px; }
+.st-error { background-color: #F9D100; height: 35px; width: auto; border-radius: 0 0 7px 7px; }
+.st-error div { color: #000000; text-decoration: none; margin: auto; }
+.st-error span { color: #000000; text-decoration: none; font-weight: bold; }
+.st-error img { color: #000000; text-decoration: none; padding: 10px; }
+.st-error a { color: #000000; text-decoration: none; padding: 10px; }
+/*-----------------------Success-----------------------------------------------------------------------*/
+.st-success-div { margin: auto; width: 360px; }
+.st-success { background-color: #C6F2D4; height: 35px; width: auto; border-radius: 0 0 7px 7px; }
+.st-success div { color: #000000; text-decoration: none; margin: auto; }
+.st-success span { color: #000000; text-decoration: none; font-weight: bold; }
+.st-success img { color: #000000; text-decoration: none; padding: 10px; }
+.st-success a { color: #000000; text-decoration: none; padding: 10px; }

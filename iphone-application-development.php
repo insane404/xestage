@@ -26,8 +26,8 @@ include('core.php');
     <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
 
         <?php
-        $page = '8';
-        include($ABSOLUTE_URL.'/includes/development_left_panel.php');
+        $page = '1';
+        include($ABSOLUTE_URL.'/includes/mobile_left_panel.php');
         ?>
 
     </div>

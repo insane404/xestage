@@ -16,6 +16,30 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
         <form id="Form" action="process/process.php" method="post">
             <input type="hidden" name="action" value="short_form" />
             <div class="form-h">&nbsp;Contact us now! (We'll call you straight back)</div>
+            <?php
+            /*if($_GET['s']=='')
+            {
+                
+            }*/
+            ?>
+            <!--<div class="form-extra" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                <div class="st-success-div" id="images_success_div">
+                    <div class="st-success">
+                        <img src="images/check.gif" border="0" style="float: left" />
+                        <div style="float: left; padding-top: 7px;">
+                            <span>Your request has been successfully saved. Thanks!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(window).load(function(){
+                    $("#images_success_div").slideDown("slow");
+                    setTimeout(function() {
+                        $("#images_success_div").slideUp("slow");
+                    }, 5000);
+                })
+            </script>-->
             <div class="form">
                 <div class="formdiv">
                     <div class="field1">&nbsp;Name</div>

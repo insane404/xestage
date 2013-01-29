@@ -5,7 +5,7 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <!--<li><a href="#">Portfolio</a></li>-->
             <li><a href="website_design.php">Services</a></li>
             <li><a href="contact_us.php">Contact Us</a></li>
         </ul>

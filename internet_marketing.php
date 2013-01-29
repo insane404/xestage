@@ -22,8 +22,8 @@ include('core.php');
   <div class="inner_content margin-t-min-35" style=" border-top-left-radius:5px; border-top-right-radius:5px;">
     <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
         <?php
-        $page = '7';
-        include($ABSOLUTE_URL.'/includes/development_left_panel.php');
+        $page = '1';
+        include($ABSOLUTE_URL.'/includes/im_left_panel.php');
         ?>
     </div>
    <div class="flt wid675">

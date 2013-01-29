@@ -27,13 +27,14 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
 
 <div id="content">
   <div class="inner_content margin-t-min-35" style=" border-top-left-radius:5px; border-top-right-radius:5px;">
-   <div class="flt wid675">
+    <div class="flt wid675" style="width: 660px;">
     <p>&nbsp;</p>
-    <span class="headings">Contact Us</span>
+    <span class="headings" style="margin-left: 40px;">Contact Us</span>
+    <!--<p>Xenial always strives for cent percent customer satisfaction, so keeping up with our promise we will contact you right away.</p>-->
     <div class="contactform">
         <form id="Form" action="process/process.php" method="post">
             <input type="hidden" name="action" value="full_form" />
-            <div class="form-contact">
+            <div class="form-contact" style="margin-left: 22px;">
                 <div class="formdiv-contact">
                     <div class="field1">&nbsp;Select Inquiry Type</div>
                     <div class="field4">
@@ -355,7 +356,7 @@ require_once($ABSOLUTE_URL.'/includes/recaptchalib.php');
                         //echo recaptcha_get_html($publickey, $error);
                         ?>
                         <div id="recaptcha_widget" style="display:none">
-                        <div id="recaptcha_image" style="border: 1px #000000 solid;"></div>
+                        <div id="recaptcha_image" style="border: 1px #000000 solid; margin-bottom: 5px;"></div>
                         <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
 
                         <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" style="float: left; width: 290px;" />

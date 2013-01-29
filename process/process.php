@@ -19,6 +19,7 @@ switch ($action){
                 $to .= 'jestinthomas85@gmail.com';
                 // subject
                 $subject = 'URGENT Short Contact Form Email';
+                $ackSubject = '';
                 // message
                 $message = '
                 <html>
@@ -56,17 +57,18 @@ switch ($action){
                 // Additional headers
                 $headers .= 'To: Jestin <jestingthomas@gmail.com>, Jestin <jestinthomas85@gmail.com>' . "\r\n";
                 $headers .= 'From: xenialservices.com <contact@xenialservices.com>' . "\r\n";
-                /*$headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
-                $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";*/
                 // Mail it
                 mail($to, $subject, $message, $headers);
+                mail($email, $subject, $message, $headers);
+                $url = $_SERVER['HTTP_REFERER'].'?s=1';
             } else {
                 # set the error code so that we can display it
                 $error = $resp->error;
                 #incorrect-captcha-sol
+                $url = $_SERVER['HTTP_REFERER'].'?e='.$error;
             }
         }
-        header("Location: ".$_SERVER['HTTP_REFERER']);
+        header("Location: ".$url);
         exit;
         break;
     

@@ -24,38 +24,19 @@ include('core.php');
 
   <div class="inner_content margin-t-min-35" style=" border-top-left-radius:5px; border-top-right-radius:5px;">
 
-  <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
-
-        <ul>
-
-            <li><a href="website_design.html">Website Design</a></li>
-
-            <li><a href="web_application_development.html" >Web Application Development</a></li>
-
-            <li><a href="e-commerce.html" >E-Commerce</a></li>
-
-            <li><a href="content_management_system.html">Content Management System</a></li>
-
-            <li><a href="testing_&_qa.html">Testing & QA</a></li>
-
-            <li><a href="#">3D & Animation</a></li>
-
-            <li><a href="internet_marketing.html" class="current">Internet Marketing</a></li>
-            <li><a href="iphone-application-development.html">iPhone App Development</a></li>
-            <li><a href="android-application-development.html">Android App Development</a></li>
-            <li><a href="software-development.html">Software Development</a></li>
-
-        </ul>
-
-	</div>
+    <div class="flt sub-menu margin-t-80" style="width:290px; margin-left:15px;">
+        <?php
+            $page = '2';
+            include($ABSOLUTE_URL.'/includes/im_left_panel.php');
+        ?>
+    </div>
 
    <div class="flt wid675">
 
     <p>&nbsp;</p>
 
     <span class="headings">Search Engine Optimisation</span>
-<p></p>
-<br /><span class="subheadings">Ethical  100% White Hat SEO Services</span>
+<br /><br /><span class="subheadings">Ethical  100% White Hat SEO Services</span>
 <p>Our Ethical SEO (Search Engine  Optimisation) services are &ldquo;100% White Hat&rdquo; services which mean that we follow  all the guidelines shared by the Major Search Engines (Google, Bing, Yahoo,  Etc.). We use only White Hat SEO Methods and carry the process of Website  Promotion and the visitor engagement in a Non-Spammy way so that your website  gets targeted traffic and boosts your Online Business.</p>
 <p>We do not engage in Black Hat SEO or  Grey Hat SEO practices that could result in your website being banned from the SERP  (Search Engine Result Pages).
 We practice only White Hat SEO  methods &amp; techniques so that your Business grows over time with increased  Sales &amp; Profits. </p>
