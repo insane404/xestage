@@ -33,7 +33,7 @@ include('core.php');
     </p>
     <p>With an experienced and dedicated workforce , we have the capability to build core php applications as well as to integrate it with other open source technologies like mysql and content management systems. Xenial is capable of delivering end to end robust php applications. </p>
     <p>We at Xenial also ensure timely deliverance and smooth transition of product to the client. Our experts code and develops highly optimized php codes while taking in consideration each and every requirement of the clients.</p>
-    <p>Xenial has a vast experience in developing applicaions based on PHP, some solutions provided to our clients based on PHP are like web applications, inventory applications, payment gateways, CMS etc. PHP being an open source web development language provides with our clients with endless possibilities, while also keeping the whole system durable and secure. </p>
+    <p>Xenial has a vast experience in developing applicaions based on PHP, some solutions provided to our clients based on PHP are like web applications, inventory applications, payment gateways, CMS etc. PHP being an open source web development language provides with our clients with endless possibilities, while also keeping the whole system durable and secure. </p>    
     <p>&nbsp;</p>
    </div>
         

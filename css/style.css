@@ -271,15 +271,15 @@ ul.small-list li {  font: 16px arial; list-style-position: inside;list-style-typ
     margin: 17px 3px !important;
 }
 /*-----------Error-----------------------------------------------------------------------------------*/
-.st-error-div { margin: auto; width: 530px; }
+.st-error-div { margin: auto; width: 470px; }
 .st-error { background-color: #F9D100; height: 35px; width: auto; border-radius: 0 0 7px 7px; }
 .st-error div { color: #000000; text-decoration: none; margin: auto; }
 .st-error span { color: #000000; text-decoration: none; font-weight: bold; }
 .st-error img { color: #000000; text-decoration: none; padding: 10px; }
 .st-error a { color: #000000; text-decoration: none; padding: 10px; }
 /*-----------------------Success-----------------------------------------------------------------------*/
-.st-success-div { margin: auto; width: 360px; }
-.st-success { background-color: #C6F2D4; height: 35px; width: auto; border-radius: 0 0 7px 7px; }
+.st-success-div { margin: auto; width: 410px; }
+.st-success { background-color: #6EC94A; height: 35px; width: auto; border-radius: 0 0 7px 7px; }
 .st-success div { color: #000000; text-decoration: none; margin: auto; }
 .st-success span { color: #000000; text-decoration: none; font-weight: bold; }
 .st-success img { color: #000000; text-decoration: none; padding: 10px; }
